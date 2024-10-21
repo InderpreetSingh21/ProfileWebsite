@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    background-color: #f5f5f5; /* Light background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form container styles */
+#survey-form {
+    background-color: #ffffff; /* White form background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px;
+    width: 100%; /* Full width on smaller screens */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form elements */
+}
+
+/* Title and description */
+#title {
+    font-size: 2rem;
+    color: #333;
+}
+
+#description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Label styling */
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Input, select, and textarea styling */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    outline: none;
+    transition: border-color 0.3s ease; /* Smooth border change on focus */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff; /* Highlight on focus */
+}
+
+/* Textarea styling */
+textarea {
+    height: 80px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+/* Radio buttons and checkboxes */
+fieldset {
+    border: none; /* Remove default fieldset border */
+    padding: 0;
+    margin: 10px 0;
+}
+
+/* Radio and checkbox labels */
+label input[type="radio"],
+label input[type="checkbox"] {
+    margin-right: 10px; /* Space between input and label text */
+}
+
+/* Submit button styling */
+#submit {
+    background-color: #007bff; /* Blue button */
+    color: #ffffff;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+#submit:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+    #title {
+        font-size: 1.5rem;
+    }
+
+    #description {
+        font-size: 0.9rem;
+    }
+}
+

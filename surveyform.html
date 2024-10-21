@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveryform.css">
+</head>
+<body>
+    <!-- Title element -->
+    <header>
+        <h1 id="title">Bayside Bagel Survey Form</h1> <!-- h1 with id of title -->
+        <p id="description">Please fill out this survey to help us improve our services.</p> <!-- p with id of description -->
+    </header>
+
+    <!-- Survey form -->
+    <form id="survey-form" action="mailto:singhinderpreet098@gmail.com" method="post" enctype="text/plain"> 
+        
+        <!-- Name input -->
+        <label for="name" id="name-label">Name:</label> <!-- label for name input -->
+        <input type="text" id="name" placeholder="Enter your name" required> <!-- input with id of name -->
+        
+        <!-- Email input -->
+        <label for="email" id="email-label">Email:</label> <!-- label for email input -->
+        <input type="email" id="email" placeholder="Enter your email" required> <!-- input with id of email -->
+        
+        <!-- Number input -->
+        <label for="number" id="number-label">Item Purchased:</label> <!-- label for number input -->
+        <input type="text" id="item" placeholder="Enter the item purchased" required>
+        
+        <!-- First Dropdown -->
+        <label for="dropdown1">Store Location:</label>
+        <select id="dropdown1" required> <!-- select field with id of dropdown1 -->
+            <option value="" disabled selected>Select an option</option> <!-- Placeholder option -->
+            <option value="option1">Slim's</option> <!-- First selectable option -->
+            <option value="option2">Bayside Bagel & Deli</option> <!-- Second selectable option -->
+        </select>
+
+        <!-- Second Dropdown -->
+        <label for="dropdown2">Rate this item:</label>
+        <select id="dropdown2" required> <!-- select field with id of dropdown2 -->
+            <option value="" disabled selected>Select an option</option> <!-- Placeholder option -->
+            <option value="option3">1</option> <!-- First selectable option -->
+            <option value="option4">2</option>
+            <option value="option5">3</option>
+            <option value="option6">4</option>
+            <option value="option7">5</option> 
+            <option value="option8">6</option>
+            <option value="option9">7</option>
+            <option value="option10">8</option>
+            <option value="option11">9</option>
+            <option value="option12">10</option>
+        </select>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" placeholder="Enter your comments here..."></textarea> <!-- Textarea -->
+
+        <!-- Submit button -->
+        <input type="submit" id="submit" value="Submit"> <!-- submit button with id of submit -->
+
+    </form>
+</body>
+</html>
